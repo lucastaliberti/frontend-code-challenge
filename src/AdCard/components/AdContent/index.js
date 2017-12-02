@@ -14,6 +14,12 @@ const AdContent = ({ description, location, price, rooms, measure }) => (
   </div>
 )
 
-AdContent.propTypes = {}
+AdContent.propTypes = {
+  description: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired,
+  rooms: PropTypes.string.isRequired,
+  measure: PropTypes.string.isRequired
+}
 
 export default AdContent
