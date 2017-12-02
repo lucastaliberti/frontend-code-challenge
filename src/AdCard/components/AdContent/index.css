@@ -1,0 +1,42 @@
+.AdContent {
+  border-style: solid;
+  border-color: #e3e3e3;
+  border-width: 0px 1px 1px 1px;
+  padding: 40px;
+  font-size: 15px;
+}
+.AdContent .description {
+  color: #222;
+  margin: 0px 0px 12px;
+  height: 40px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.AdContent .location {
+  font-size: 73%;
+  color: #bbb;
+  margin: 0px 0px 42px;
+}
+
+.AdContent .info {
+  display: flex;
+}
+
+.AdContent .price {
+  width: 125px;
+  font-weight: bold;
+  color: #333;
+}
+
+.AdContent .rooms {
+  width: 84px;
+  border: solid #e3e3e3;
+  border-width: 0px 1px 0px 0px;
+  color: #bbb;
+}
+.AdContent .measure {
+  width: 68px;
+  text-align: right;
+  color: #bbb;
+}
