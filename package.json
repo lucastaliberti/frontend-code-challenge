@@ -12,6 +12,10 @@
     "lint-staged": "^6.0.0",
     "prettier": "1.8.2"
   },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
   "scripts": {
     "precommit": "lint-staged",
     "start": "react-scripts start",
@@ -20,6 +24,6 @@
     "eject": "react-scripts eject"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,json,css}": ["prettier --single-quote --write", "git add"]
+    "src/**/*.{js,jsx,json,css}": ["prettier --write", "git add"]
   }
 }
