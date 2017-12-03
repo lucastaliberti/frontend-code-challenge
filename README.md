@@ -34,9 +34,10 @@ I also added [Prettier](https://github.com/prettier/prettier) for linting the
 code and added a precommit hook using [Husky](https://github.com/typicode/husky)
 to automatically fix the files on stage.
 
-I'm using yarn for its speed and simplicity.
-
 ## To run
+
+I'm using yarn for its speed and simplicity. But all below comands will work
+with npm.
 
 1. First install all dependencies
 
