@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 
@@ -13,14 +14,22 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.props)
     const { ads } = this.props
+    const items = ads.map((ad, index) => <AdCard key={index} ad={ad} />)
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">McMakler - frontend code test</h1>
         </header>
-        <main>{ads.map((ad, index) => <AdCard key={index} ad={ad} />)}</main>
+        <main>
+          <ReactCSSTransitionGroup
+            transitionName="Ad"
+            transitionEnterTimeout={500}
+            transitionLeaveTimeout={500}
+          >
+            {items}
+          </ReactCSSTransitionGroup>
+        </main>
       </div>
     )
   }
