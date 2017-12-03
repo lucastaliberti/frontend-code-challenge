@@ -22,12 +22,3 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-
-.Ad-enter {
-  opacity: 0.01;
-}
-
-.Ad-enter.Ad-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in;
-}

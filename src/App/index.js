@@ -23,7 +23,7 @@ class App extends Component {
         </header>
         <main>
           <ReactCSSTransitionGroup
-            transitionName="Ad"
+            transitionName="AdCard"
             transitionEnterTimeout={500}
             transitionLeaveTimeout={500}
           >

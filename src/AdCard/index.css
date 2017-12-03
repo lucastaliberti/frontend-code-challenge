@@ -10,3 +10,12 @@
   height: 240px;
   object-fit: cover;
 }
+
+.AdCard-enter {
+  opacity: 0.01;
+}
+
+.AdCard-enter.AdCard-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
