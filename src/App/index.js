@@ -11,6 +11,15 @@ class App extends Component {
         </header>
         <main>
           <AdCard />
+          <AdCard />
+          <AdCard />
+          <AdCard />
+          <AdCard />
+          <AdCard />
+          <AdCard />
+          <AdCard />
+          <AdCard />
+          <AdCard />
         </main>
       </div>
     )

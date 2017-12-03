@@ -1,6 +1,7 @@
 .AdCard {
   width: 360px;
   position: relative;
+  margin-bottom: 40px;
 }
 
 .AdCard img {
