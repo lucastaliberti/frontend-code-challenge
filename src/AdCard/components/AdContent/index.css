@@ -24,19 +24,19 @@
 }
 
 .AdContent .price {
-  width: 125px;
+  width: 100px;
   font-weight: bold;
   color: #333;
 }
 
 .AdContent .rooms {
-  width: 84px;
+  width: 78px;
   border: solid #e3e3e3;
   border-width: 0px 1px 0px 0px;
   color: #bbb;
 }
 .AdContent .measure {
-  width: 68px;
+  width: 100px;
   text-align: right;
   color: #bbb;
 }
