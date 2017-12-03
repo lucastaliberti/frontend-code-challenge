@@ -2,15 +2,14 @@ import React, { Component } from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 
-import { dataRetrieved } from './actions'
+import { dataRequest } from './actions'
 import './index.css'
 import AdCard from '../AdCard'
-import Ads from './data'
 
 class App extends Component {
   componentDidMount() {
-    const { dataRetrieved } = this.props
-    Ads().then(ads => dataRetrieved(ads))
+    const { dataRequest } = this.props
+    dataRequest()
   }
 
   render() {
@@ -29,6 +28,6 @@ class App extends Component {
 
 const mapStateToProps = state => ({ ads: state.ads })
 const mapDispatchToProps = dispatch =>
-  bindActionCreators({ dataRetrieved }, dispatch)
+  bindActionCreators({ dataRequest }, dispatch)
 
 export default connect(mapStateToProps, mapDispatchToProps)(App)
