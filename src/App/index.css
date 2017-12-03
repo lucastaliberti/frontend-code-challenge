@@ -1,5 +1,5 @@
 .App {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .App-header {
@@ -11,4 +11,11 @@
 
 .App-title {
   font-size: 1.5em;
+}
+
+.App main {
+  padding: 40px 40px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
