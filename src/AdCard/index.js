@@ -5,26 +5,24 @@ import './index.css'
 import TypeButton from './components/TypeButton'
 import AdContent from './components/AdContent'
 
-const AdCard = props => {
-  console.log(props)
+const AdCard = ({ ad }) => {
   return (
     <div className="AdCard">
-      <TypeButton type="Mieten" />
-      <img
-        alt="img"
-        src="http://www.schaefer-fleisbach.de/assets/rollladen2.jpg"
-      />
+      <TypeButton type={ad.type} />
+      <img alt="img" src={ad.image} />
       <AdContent
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        location="35764 Sinn / Fleisbach"
-        price="1.000 €"
-        rooms="3 Zimmer"
-        measure="ab 35m&sup2;"
+        description={ad.description}
+        location={ad.location}
+        price={ad.price}
+        rooms={ad.rooms}
+        measure={ad.measure}
       />
     </div>
   )
 }
 
-AdCard.propTypes = {}
+AdCard.propTypes = {
+  ad: PropTypes.object.isRequired
+}
 
 export default AdCard
