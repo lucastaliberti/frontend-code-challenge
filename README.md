@@ -31,7 +31,8 @@ folder you'll find:
 * any other util class, like an API client or data handling functions
 
 I also added [Prettier](https://github.com/prettier/prettier) for linting the
-code with a precommit hook using [Husky](https://github.com/typicode/husky) to automatically fix the files on stage.
+code and added a precommit hook using [Husky](https://github.com/typicode/husky)
+to automatically fix the files on stage.
 
 ## To run
 
